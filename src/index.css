@@ -1,0 +1,18 @@
+body {
+    min-height: 100vh;
+    background: 
+        url(https://images.pexels.com/photos/3149896/pexels-photo-3149896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) 
+        center / cover, 
+        linear-gradient(red,green);
+    background-blend-mode: screen;
+  }
+.card{
+    border:none;
+}
+
+.card__image{
+    max-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;;
+}
+

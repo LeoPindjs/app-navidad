@@ -1,0 +1,21 @@
+{
+  "name": "prueba-snowpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf build",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.4.0"
+  }
+}

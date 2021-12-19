@@ -1,16 +1,14 @@
-import { familiares } from "../dataFamiliares/index.js"
+import { obtenerDataDelStorage } from "../localStorage"
 
-let validarFamiliarPorId = (idFamiliar) => familiares.find(({id}) => id === idFamiliar)
+let validarFamiliarPorId = (idFamiliar) => obtenerDataDelStorage('familiares').find(({id}) => id === idFamiliar)
 
-let validarFamiliarPorContrasena = (contrasena) => familiares.find(({id}) => id === contrasena)    
+let validarFamiliarPorContrasena = (contrasena) => obtenerDataDelStorage('familiares').find(({id}) => id === contrasena)    
 
 let seleccionarTarjetaEnDondeSeAplicaUnClick = (tarjeta) => {
     let dataTarjetaIdFamiliar  = Number(tarjeta.dataset.idFamiliar)
     return validarFamiliarPorId(dataTarjetaIdFamiliar) // usuario por el que se votó
  }
 
- //let mostrarFamiliaresQueNoEstanVotando  = (contrasena) => familiares.filter(({id}) => id !== contrasena)
- 
 export{
     validarFamiliarPorId,
     validarFamiliarPorContrasena,
